@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 10X</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 60px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        .text-section img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .text-section h1 {
+            font-size: 42px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-section img {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .image-section {
+                margin-top: 20px;
+            }
+
+            .text-section h1 {
+                font-size: 32px;
+            }
+
+            .text-section p {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+
+        /* Estilo para a parte de estatísticas */
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #007bff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        .stat {
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .stat span {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .stat {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Nova seção com as imagens */
+        .new-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 100px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .new-section .text-content {
+            flex: 1;
+        }
+
+        .new-section .text-content h1 {
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .new-section .text-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .new-section .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .new-section .image-container img {
+            width: 190px;
+            height: 300%;
+            background-color: #007bff;
+            display: block;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .new-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .new-section .image-container {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .new-section .image-container img {
+                width: 80%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primeira parte do código -->
+    <div class="container">
+        <div class="text-section">
+            <img src="logo.png" alt="Page 10X Logo">
+            <h1>Este é o título</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <a href="#" class="button">CLIQUE AQUI</a>
+        </div>
+        <div class="image-section">
+            <img src="minhaimg.png" alt="Imagem do Laptop">
+        </div>
+    </div>
+
+    <!-- Parte da animação dos números -->
+    <div class="stats-container">
+        <div class="stat">
+            <span id="stat1">0</span> anos <br> de Experiência
+        </div>
+        <div class="stat">
+            <span id="stat2">0</span>% <br> de Aprovação
+        </div>
+        <div class="stat">
+            <span id="stat3">0</span> <br> Renovações em 2023
+        </div>
+        <div class="stat">
+            <span id="stat4">0</span> <br> Clientes Satisfeitos
+        </div>
+    </div>
+
+    <!-- Nova Seção com Imagens -->
+    <div class="new-section">
+        <div class="text-content">
+            <h1>Este é dddsd título</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="image-container">
+            <img src="carro.png" alt="Imagem 1">
+            <img src="carro2.png" alt="Imagem 2">
+            <img src="file-lhNxf6SKkPhpoNyZQ4cPjmEY" alt="Imagem 3">
+        </div>
+    </div>
+
+    <script>
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerText = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            animateValue("stat1", 0, 13, 2000); // 13 anos
+            animateValue("stat2", 0, 98, 2000); // 98% de aprovação
+            animateValue("stat3", 0, 300, 2000); // 300 renovações
+            animateValue("stat4", 0, 2678, 2000); // 2678 clientes satisfeitos
+        });
+    </script>
+
+</body>
+</html>
